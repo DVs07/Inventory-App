@@ -1,0 +1,19 @@
+name: Heroku Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Git deploy to Heroku
+      uses: onekiloparsec/heroku-node-deploy-subfolder@v1.1.0
+      with:
+        api_key: ${{secrets.HEROKU_API_KEY}}
+        email: ${{secrets.HEROKU_EMAIL}}
+        app_name: ${{secrets.HEROKU_APP}}
