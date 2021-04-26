@@ -11,7 +11,7 @@
 	<h1 th:if="${brand.id == null}">Create New Product</h1>
 	<h1 th:unless="${brand.id == null}">Edit Brand</h1>
 		<form th:action="@{/brands/save}" th:object="${brand}" method="POST"
-		style="max-width_ 600px; margin: 0 auto;">
+		style="max-width: 600px; margin: 0 auto;">
 		<input type="hidden" th:field="*{id}" th:value="${brand.id}" />
 			<div class="m-3">
 				<div class="form-group row">
