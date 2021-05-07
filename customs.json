@@ -1,0 +1,19 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:if": {
+            "context": "h1"
+        },
+        "th:text": {},
+        "th:unless": {
+            "context": "h1"
+        },
+        "th:action": {
+            "context": "form"
+        },
+        "th:field": {
+            "context": "input"
+        },
+        "th:href": {}
+    }
+}
